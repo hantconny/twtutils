@@ -42,7 +42,7 @@ public class TestTWTGsonUtils {
 	
 	@Test
 	public void testFromJson() {
-		String path = "C:\\eclipse\\workspace\\twtutils\\testResources\\person.json";
+		String path = "person.json";
 		String content = new TWTFileUtils().readFileToString(path);
 		Person p = (Person)TWTGsonUtils.fromJson(content, Person.class);
 		System.out.println(p.getPersonName().getName());

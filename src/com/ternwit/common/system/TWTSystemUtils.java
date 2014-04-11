@@ -26,6 +26,8 @@ public final class TWTSystemUtils extends SystemUtils {
 	 * file.separator 
 	 * path.separator
 	 * line.separator
+	 * user.dir
+	 * user.home
 	 */
 	public static String getOSInfo(String key) {
 		
@@ -47,5 +49,5 @@ public final class TWTSystemUtils extends SystemUtils {
 		
 		return value;
 	}
-	
+
 }

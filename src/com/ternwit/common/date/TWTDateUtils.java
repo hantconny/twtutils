@@ -67,6 +67,8 @@ public final class TWTDateUtils extends DateUtils {
 	}
 
 	/**
+	 * @param yyyy
+	 * @param mm
 	 * @return the last day of a specific month in a specific year
 	 */
 	public static Integer getLastDayInMonth(Integer yyyy, Integer mm) {
@@ -74,7 +76,7 @@ public final class TWTDateUtils extends DateUtils {
 
 		calendar.set(Calendar.YEAR, yyyy);
 
-		calendar.set(Calendar.MONTH, mm);
+		calendar.set(Calendar.MONTH, mm - 1);
 
 		Integer lastDay = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
 
